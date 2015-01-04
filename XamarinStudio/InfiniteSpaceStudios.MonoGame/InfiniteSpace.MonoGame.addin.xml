@@ -1,0 +1,34 @@
+﻿<Addin id="MonoGame" namespace="MonoDevelop" name="MonoGame Project Templates" author="Dean Ellis" copyright="MSPL" url="http://www.monogame.net/" description="C# Project and File templates for MonoGame" category="MonoGame" version="3.2.0">
+	<Runtime>
+		<Import file="icons/monogame.png" />
+		<Import file="templates/MonoGameMacProject.xpt.xml" />
+		<Import file="templates/source/Game.cs" />
+		<Import file="templates/source/Program.cs" />
+		<Import file="templates/source/MacInfo.plist" />
+		<Import file="templates/source/AssemblyInfo.cs" />
+	</Runtime>
+	<Dependencies>
+		<Addin id="Core" version="5.0" />
+		<Addin id="MonoAndroid" version="5.0"/>
+		<Addin id="IPhone" version="5.0"/>
+		<Addin id="MonoMac" version="5.0"/>
+	</Dependencies>
+	<Extension path="/MonoDevelop/Core/StockIcons">
+		<StockIcon stockid="monogame-project" file="icons/monogame.png" />
+	</Extension>
+	<Extension path="/MonoDevelop/Ide/ProjectTemplates">
+		<ProjectTemplate id="MonoGameForMacProject" file="templates/MonoGameMacProject.xpt.xml" />
+	</Extension>
+<!--
+    <Module>
+		<Runtime>
+			<Import assembly="MonoDevelop.MonoGame.Mac.dll"/>
+		</Runtime>
+		<Dependencies>
+			<Addin id="MonoDevelop.MonoMac" version="4.0"/>
+		</Dependencies>
+
+	</Module>
+-->
+</Addin>
+
